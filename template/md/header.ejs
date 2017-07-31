@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<% if (typeof favicon != "undefined" ){ %><link rel="shortcut icon" type="image/x-icon" href="<%= favicon %>" /><% } %>
+<title><% if (typeof name != "undefined" ){ %><%= name %><% } %><% if (typeof menu != "undefined" ){ %>_<%=menu%><% } %></title>
+<link type="text/css" rel="stylesheet"  href="<% if (typeof prefix != "undefined" ){ %><%= prefix %><% } %>style.css"/>
+<script src="http://libs.baidu.com/jquery/1.6.4/jquery.min.js" type="text/javascript"></script>
+</head>
+<body>
+
+<div class="header">
+	<div class="w">
+		<ul>
+			<% if (typeof hasIndex != "undefined"){ %><li <% if (typeof menu != "undefined" && menu == "index" ){ %> class="current" <% } %>><a href="<% if (typeof prefix != "undefined" ){ %><%= prefix %><% } %>index.html">Home</a></li><% } %>
+			<% if (typeof hasOctopus != "undefined"){ %><li <% if (typeof menu != "undefined" && menu == "index" ){ %> class="current" <% } %>><a href="<% if (typeof prefix != "undefined" ){ %><%= prefix %><% } %>/octopus/index.html">Octopus</a></li><% } %>
+
+			<% if (typeof hasDemo != "undefined"){ %><li <% if (typeof menu != "undefined" && menu == "demo" ){ %> class="current" <% } %>><a href="<% if (typeof prefix != "undefined" ){ %><%= prefix %><% } %>demo.html">demo</a></li><% } %>
+			<% if (typeof hasmd != "undefined"){ %><li <% if (typeof menu != "undefined" && menu == "doc" ){ %> class="current" <% } %>><a target="_blank" href="https://github.com/jdf2e/jdf">doc</a></li><% } %>
+			<% if (typeof hasChangelog != "undefined"){ %><li <% if (typeof menu != "undefined" && menu == "changelog" ){ %> class="current" <% } %>><a target="_blank" href="https://github.com/jdf2e/jdf/blob/master/CHANGELOG.md">changelog</a></li><% } %>
+			<% if (typeof hasApi != "undefined"){ %><li><a href="<% if (typeof prefix != "undefined" ){ %><%= prefix %><% } %>api.html" target="_blank">api</a></li><% } %>
+			<% if (typeof extendMenu != "undefined"){ %> <%- extendMenu%>  <% } %> 
+		</ul>
+	</div>
+</div>
+
+<!-- wrapper -->
+<div class="wrapper">
