@@ -1,7 +1,7 @@
-#jdd
+# jdd
 js文档，demo和说明文档快速生成
 
-##快速入门
+## 快速入门
 
 cmd命令行窗口下执行
 
@@ -9,7 +9,7 @@ cmd命令行窗口下执行
 
 会生成首页,demo页,changelog页,api页
 
-##目录结构
+## 目录结构
 
 	demo/ demo文件目录
 	js/ js文件目录
@@ -18,7 +18,7 @@ cmd命令行窗口下执行
 	readme.md
 	package.json
 
-##配置详解
+## 配置详解
 
 	{
 		"name": "myjs",  //工程名
@@ -43,7 +43,7 @@ cmd命令行窗口下执行
 		}
 	}
 
-##建议package.json源文件
+## 建议package.json源文件
 
 可直接复制后生成package.json
 
